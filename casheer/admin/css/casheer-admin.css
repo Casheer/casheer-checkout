@@ -1,0 +1,25 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+#payment-help-text{
+display: block;font-size: 12px;padding: 8px 0px;font-weight: bold;	
+}
+.table-box-main{
+	background: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+.haserror{
+	border-color:red !important;
+}
+#alert_message{
+	color:red;
+	font-weight:bold;
+	padding-bottom: 10px;
+}
+.ogbtn{
+	min-width: 30px !important;
+    font-size: 1.5rem !important;
+    font-weight: bold !important;
+}

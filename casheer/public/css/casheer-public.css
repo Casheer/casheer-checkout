@@ -1,0 +1,79 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ */
+input.casheer_methods {
+    margin-right: 8px;
+}
+.radio_payment{
+    height: 52px;
+    line-height: 52px;
+    border-radius: 5px;
+    padding: 0px 5px;
+    border-bottom: 1px solid #e5e5e5;
+    display:block;
+    position:relative;
+}
+.radio_payment label{
+	min-height: 20px;
+    padding-left: 20px;
+    margin-bottom: 0;
+    font-weight: 400;
+    cursor: pointer;
+	display:inline;
+}
+.radio_payment span{
+   float:right;
+   margin-top:15px;
+}
+.radio_payment span img{
+	vertical-align: middle;
+}
+.radio_payment br{ display:none;}
+.ogdesc{
+	/*font-size: 1.6rem;*/
+}
+.wc_payment_method .payment_box fieldset{
+	background: transparent;
+    padding: 0px !important;
+}
+.payment_method_casheer img{
+	width: 50px;
+    float: right;
+}
+
+    .card-img img {
+        width:40px;
+    }
+    .payment-method-section {
+        width:100%;
+        max-width: 350px;
+        margin:auto;
+        background-color: #f2f2f2;
+    }
+
+    .payment-card {
+    display: flex;
+    justify-content: space-between;
+    padding: 11px 14px;
+    border-bottom: 0px solid #e1e1e1;
+}
+
+.card-content {
+    display: flex;
+    align-items: center;
+    column-gap: 9px;
+}
+
+.card-content label:hover {
+    cursor:pointer;
+}
+
+.card-content label {
+    padding-right: 9px;
+}
+
+.card-img {
+    display: flex;
+    align-items: center;
+}
