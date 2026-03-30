@@ -542,29 +542,15 @@ add_action( 'plugins_loaded', 'casheer_init_gateway_classes' );
 		 * @since 1.0.0
 		 * @param string $orderid  Order Id.
 		 */
-		public function generateRefrenceId($orderid){
+		public function generateRefrenceId($orderid) {
 
-			$digits_needed = 15;
+			$timestamp = time(); // 10 digits
+			$orderPart = substr(preg_replace('/\D/', '', (string) $orderid), -5);
+			$orderPart = str_pad($orderPart, 5, '0', STR_PAD_LEFT);
+
+			$referenceId = $timestamp . $orderPart;
 			
-			$orderid = time().$orderid;
-			
-			$length = strlen((int)$orderid);
-			
-			if($length<$digits_needed){
-			
-				$required = $digits_needed-$length;
-				
-				$id='';
-				for ($i = 1; $i <= $required; $i++) {
-					$id .= 1;
-				}
-				
-				$refrenceId = $id.$orderid;
-			}else{
-				$refrenceId = $id.$orderid;
-			}
-			
-			return (int)$refrenceId;
+			return $referenceId;
 		}
 
 		/**
